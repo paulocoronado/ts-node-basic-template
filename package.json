@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "ts-node src/index.ts",
-    "build": "tsc",
+    "start": "node ./dist/src/index.js",    
+    "build": "tsc -p .",
     "dev": "ts-node --watch src/index.ts",
     "docs": "typedoc --entryPointStrategy expand ./src",
-    "jsonschema": "prisma generate --generator=jsonSchema"
+    "jsonschema": "prisma generate --generator=jsonSchema",
+    "lint": "eslint src/**/*.ts"
   },
   "keywords": [],
   "author": "",
