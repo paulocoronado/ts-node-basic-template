@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "node ./dist/src/index.js",    
     "build": "tsc -p .",
-    "dev": "ts-node --watch src/index.ts",
+    "dev": "ts-node src/index.ts",
     "docs": "typedoc --entryPointStrategy expand ./src",
     "jsonschema": "prisma generate --generator=jsonSchema",
     "lint": "eslint src/**/*.ts"
