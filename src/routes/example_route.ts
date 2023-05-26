@@ -25,6 +25,12 @@ router.get(
             case 1:
                 res.status(400).send('Bad Request')
                 break
+            case 2:
+                //wait 5 seconds before sending the response
+                setTimeout(()=>{
+                    res.send(req.params.msg)
+                },5000)
+                break
             default:
                 res.send(req.params.msg)            
         }
